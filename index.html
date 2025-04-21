@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rauneet Equipments</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .slider-carousel .item img {
+            width: 90%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+
+        .slider-carousel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .icon i {
+            transition: transform 0.3s ease;
+        }
+
+        .icon:hover i {
+            transform: scale(1.2);
+            color: #0056b3;
+        }
+
+        .client-slider {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .client-slide-track {
+            display: flex;
+            width: calc(250px * 12);
+            /* Adjust if you add more logos */
+            animation: scroll 40s linear infinite;
+        }
+
+        .client-slide {
+            height: 100px;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .client-slide img {
+            max-height: 80px;
+            max-width: 200px;
+            filter: brightness(0) invert(1);
+            /* Optional for white logos on dark background */
+            opacity: 0.9;
+            transition: transform 0.3s ease;
+        }
+
+        .client-slide img:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Rauneet Equipments</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#aboutus" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a href="#clients" class="nav-link">Clients</a></li>
+                    <li class="nav-item"><a href="#contactus" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item cta"><a href="#" class="nav-link" data-toggle="modal"
+                            data-target="#modalRequest"><span>Get a Quote</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-wrap">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <div class="slider-text d-md-flex align-items-center" data-scrollax-parent="true">
+
+                <div class="one-forth ftco-animate align-self-md-center"
+                    data-scrollax=" properties: { translateY: '70%' }">
+                    <h1 class="mb-4"> A Leading Supplier of
+                        <strong class="typewrite" data-period="4000"
+                            data-type='[ "Electrical Components", "Electronic Components", "Industrial Components" ]'>
+                            <span class="wrap"></span>
+                        </strong>
+                    </h1>
+                    <p class="mb-md-4 mb-sm-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                        Empowering industries with high-quality electrical, electronic, and mechanical solutions.</p>
+                    <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#"
+                            class="btn btn-primary px-4 py-3">Get a Quote</a> <a href="#aboutus"
+                            class="btn btn-primary btn-outline-primary px-4 py-3">Learn More</a></p>
+                </div>
+                <div class="one-half align-self-md-end align-self-sm-center">
+                    <div class="slider-carousel owl-carousel">
+                        <div class="item">
+                            <img src="images/Background-images/Main_img.jpg" class="img-fluid img" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/Background-images/Main_img_2.jpg" class="img-fluid img" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="images/Background-images/Main_img_3.jpg" class="img-fluid img" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <section id="aboutus">
+        <div class="container-wrap mt-5">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-6 img ftco-animate"
+                    style="background-image: url(images/Background-images/Main_img_2.jpg);">
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="services-wrap">
+                        <div class="heading-section mb-5 ftco-animate">
+                            <h2 class="mb-2">About Us</h2>
+                            <span class="subheading">Your Trusted Partner in Industrial Supply & Services</span>
+                        </div>
+                        <div class="ftco-animate">
+                            <p>We are one of the rapidly growing importers and suppliers of connectors, terminals, and a
+                                wide range of automotive and electronic components. Our company is built on strong
+                                values of quality, reliability, and technical excellence.</p>
+                            <p>In addition to our vast supply capabilities, we offer end-to-end support in installation,
+                                inspection, testing, and Annual Maintenance Contracts (AMC) for electrical and
+                                electronic systems including Enviromental & Safety Associated with Product.</p>
+                            <p>With a commitment to innovation and customer satisfaction, we strive to deliver
+                                comprehensive industrial solutions that meet today’s dynamic market needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Products -->
+    <section id="products" class="ftco-section ftco-work">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <h2 class="mb-2">Our Products</h2>
+                    <span class="subheading">Delivering Excellence in Electrical and Engineering Solutions</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 ftco-animate">
+                    <div class="work-entry">
+                        <a href="#" class="img"
+                            style="background-image: url(images/Background-images/About-us_bg.jpg);">
+                            <div class="text d-flex justify-content-center align-items-center">
+                                <div class="p-3">
+                                    <span>Power Solutions</span>
+                                    <h3>Three Phase AMF Panel</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="work-entry">
+                        <a href="#" class="img"
+                            style="background-image: url(images/Background-images/About-us_bg_2.jpg);">
+                            <div class="text d-flex justify-content-center align-items-center">
+                                <div class="p-3">
+                                    <span>Control Systems</span>
+                                    <h3>Automatic Power Factor Correction Panel</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="work-entry">
+                        <a href="#" class="img" style="background-image: url(images/Background-images/Main_img.jpg);">
+                            <div class="text d-flex justify-content-center align-items-center">
+                                <div class="p-3">
+                                    <span>Energy Monitoring</span>
+                                    <h3>Smart Energy Meter Panel</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="work-entry">
+                        <a href="#" class="img" style="background-image: url(images/Background-images/Main_img_2.jpg);">
+                            <div class="text d-flex justify-content-center align-items-center">
+                                <div class="p-3">
+                                    <span>Automation</span>
+                                    <h3>PLC Control Panel</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="work-entry">
+                        <a href="#" class="img" style="background-image: url(images/Background-images/Main_img_3.jpg);">
+                            <div class="text d-flex justify-content-center align-items-center">
+                                <div class="p-3">
+                                    <span>Switchgear</span>
+                                    <h3>Distribution Board (DB Box)</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="work-entry">
+                        <a href="#" class="img"
+                            style="background-image: url(images/Background-images/Our-services_bg.jpg);">
+                            <div class="text d-flex justify-content-center align-items-center">
+                                <div class="p-3">
+                                    <span>Custom Fabrication</span>
+                                    <h3>Busbar Panel with MCB & MCCB</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Header -->
+    <section id="services" class="ftco-section ftco-section-2">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3 class="heading-white">We Provide High Quality Services</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="ftco-section ftco-services">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <h2 class="mb-2">Our Service Keeps you Happy</h2>
+                    <span class="subheading">Experts in Electrical, Electronics & Engineering Solutions</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center"
+                            style="font-size: 3rem; color: #007bff;">
+                            <i class='bx bx-plug'></i>
+                        </div>
+                        <div class="media-body p-2 mt-3">
+                            <h3 class="heading">Component & Equipment Supply</h3>
+                            <p>Supply of Electrical, Electronic & Mechanical Equipments/Components/Accessories & Test
+                                Equipments.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center"
+                            style="font-size: 3rem; color: #007bff;">
+                            <i class='bx bx-wrench'></i>
+                        </div>
+                        <div class="media-body p-2 mt-3">
+                            <h3 class="heading">Installation & Commissioning</h3>
+                            <p>Installation and Commissioning of Equipments and System</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center"
+                            style="font-size: 3rem; color: #007bff;">
+                            <i class='bx bx-refresh'></i>
+                        </div>
+                        <div class="media-body p-2 mt-3">
+                            <h3 class="heading">Annual Maintenance Contracts (AMC)</h3>
+                            <p>AMC Support on Electrical and Electronics Equipment/System</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block text-center">
+                        <div class="icon d-flex justify-content-center align-items-center"
+                            style="font-size: 3rem; color: #007bff;">
+                            <i class='bx bx-package'></i>
+                        </div>
+                        <div class="media-body p-2 mt-3">
+                            <h3 class="heading">Product Safety Training</h3>
+                            <p>We also deal in Environmental and Safety Training Associated with the Product.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Our Clients -->
+    <section id="clients" class="client-slider-section"
+        style="background: linear-gradient(to right, #005c97, #363795); padding: 60px 0;">
+        <div class="container">
+            <h2 class="text-center text-white mb-5">Our Trusted Clients</h2>
+            <div class="client-slider">
+                <div class="client-slide-track">
+                    <div class="client-slide"><img src="images/clients/client1.png" alt="Client 1"></div>
+                    <div class="client-slide"><img src="images/clients/client2.png" alt="Client 2"></div>
+                    <div class="client-slide"><img src="images/clients/client3.png" alt="Client 3"></div>
+                    <div class="client-slide"><img src="images/clients/client4.png" alt="Client 4"></div>
+                    <!-- Repeat if needed for continuous effect -->
+                    <div class="client-slide"><img src="images/clients/client1.png" alt="Client 1"></div>
+                    <div class="client-slide"><img src="images/clients/client2.png" alt="Client 2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Rauneet Equipments</h2>
+                        <p>Empowering industries with high-quality electrical, electronic, and mechanical
+                            solutions.</p>
+                    </div>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
+                        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Quick Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">About Us</a></li>
+                            <li><a href="#" class="py-2 d-block">Products</a></li>
+                            <li><a href="#" class="py-2 d-block">Services</a></li>
+                            <li><a href="#" class="py-2 d-block">Clients</a></li>
+                            <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Contact Info</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Makarpura,
+                                        Vadodara,<br> Gujarat-390014</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91
+                                            9714710989</span></a></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91
+                                            9470567294</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span
+                                            class="text">rauneetequipments@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0 text-light">
+                        &copy;
+                        <script>document.write(new Date().getFullYear());</script> Rauneet Equipments. All rights
+                        reserved.
+                    </p>
+                    <small class="text-muted">
+                        Template design inspired by <a href="https://colorlib.com" target="_blank"
+                            rel="noopener noreferrer" class="text-muted">Colorlib</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog" aria-labelledby="modalRequestLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRequestLabel">Request a Quote</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <!-- <label for="appointment_name" class="text-black">Full Name</label> -->
+                            <input type="text" class="form-control" id="appointment_name" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="appointment_email" class="text-black">Email</label> -->
+                            <input type="text" class="form-control" id="appointment_email" placeholder="Email">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <!-- <label for="appointment_date" class="text-black">Date</label> -->
+                                    <input type="text" class="form-control" id="appointment_date" placeholder="Date">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <!-- <label for="appointment_time" class="text-black">Time</label> -->
+                                    <input type="text" class="form-control" id="appointment_time" placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <!-- <label for="appointment_message" class="text-black">Message</label> -->
+                            <textarea name="" id="appointment_message" class="form-control" cols="30" rows="10"
+                                placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Get a Quote" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
